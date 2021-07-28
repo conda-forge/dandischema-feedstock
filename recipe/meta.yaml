@@ -1,5 +1,5 @@
 {% set name = "dandischema" %}
-{% set version = "0.2.10" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8121fc56474d44087b5ddc10da41b2e968a4eedbb185cc3161659551917926b9
+  sha256: 074aed68279251e95c123ab0cbb49a65f93b6352418a562e352a2de54b35cb1c
 
 build:
   noarch: python
