@@ -24,14 +24,13 @@ requirements:
     - email-validator >=1.0.3
     - jsonschema
     - pydantic >=1.8.1
-    - ruamel.yaml
+    - requests
     - typing_extensions
 
 test:
   requires:
     - pytest
     - pytest-cov
-    - requests
   source_files:
     - tox.ini
   imports:
