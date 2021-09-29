@@ -1,5 +1,5 @@
 {% set name = "dandischema" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4fbef796e9a2fdb404fa5aac369439143e2017af0879f9fd2e331077e00c42b6
+  sha256: 9a3be9d79e62ff247b30294a04e52139a8973d1884db854e2201317c3cc8196e
 
 build:
   noarch: python
@@ -24,14 +24,14 @@ requirements:
     - email-validator >=1.0.3
     - jsonschema
     - pydantic >=1.8.1
-    - ruamel.yaml
+    - requests
+    - rfc3987
     - typing_extensions
 
 test:
   requires:
     - pytest
     - pytest-cov
-    - requests
   source_files:
     - tox.ini
   imports:
