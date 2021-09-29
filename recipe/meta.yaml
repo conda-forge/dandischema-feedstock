@@ -25,6 +25,7 @@ requirements:
     - jsonschema
     - pydantic >=1.8.1
     - requests
+    - rfc3987
     - typing_extensions
 
 test:
