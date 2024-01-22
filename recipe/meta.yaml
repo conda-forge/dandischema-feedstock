@@ -16,23 +16,23 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools
     - versioningit
   run:
-    - python >=3.7
+    - python >=3.8
     - email-validator >=1.0.3
     - jsonschema
-    - pydantic >=1.8.1,<2
+    - pydantic >=2.4,<3
     - requests
     - rfc3987
-    - typing_extensions
 
 test:
   requires:
     - pytest
     - pytest-cov
+    - pytest-rerunfailures
   source_files:
     - tox.ini
   imports:
