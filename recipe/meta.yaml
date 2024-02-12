@@ -27,6 +27,7 @@ requirements:
     - pydantic >=2.4,<3
     - requests
     - rfc3987
+    - zarr-checksum
 
 test:
   requires:
