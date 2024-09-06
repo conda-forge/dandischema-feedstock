@@ -27,7 +27,7 @@ requirements:
     - pydantic >=2.4,<3
     - requests
     - rfc3987
-    - typing_extensions  # [py<39]
+    - typing_extensions
     - zarr-checksum
 
 test:
