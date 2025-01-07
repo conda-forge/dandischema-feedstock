@@ -1,5 +1,5 @@
 {% set name = "dandischema" %}
-{% set version = "0.10.4" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bef83ee03b9ee4c406a667771ca129541f1a27e9e1f0bed581eb1104ebc326aa
+  sha256: ad8d6f358b3512e789afc9c528a3b9cc9c83de298c3552b03c5e681cb416e865
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -27,7 +27,6 @@ requirements:
     - pydantic >=2.4,<3
     - requests
     - rfc3987
-    - typing_extensions
     - zarr-checksum
 
 test:
