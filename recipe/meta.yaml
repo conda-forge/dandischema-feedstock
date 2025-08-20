@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -57,4 +57,3 @@ about:
 extra:
   recipe-maintainers:
     - yarikoptic
-    - jwodder
