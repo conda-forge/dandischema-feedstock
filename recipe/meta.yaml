@@ -24,13 +24,16 @@ requirements:
     - python >={{ python_min }}
     - email-validator >=1.0.3
     - jsonschema
+    - packaging >=14.0
     - pydantic >=2.4,<3
+    - pydantic-settings
     - requests
     - rfc3987
     - zarr-checksum
 
 test:
   requires:
+    - anys
     - pytest
     - pytest-cov
     - pytest-rerunfailures
